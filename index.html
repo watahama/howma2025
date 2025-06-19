@@ -5,27 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MatchGen｜AIプロフィール写真生成</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
-    header, section { padding: 2em 1.5em; }
-    header { background: #0074e4; color: white; text-align: center; }
-    h1 { font-size: 1.8em; margin-bottom: 0.5em; }
-    h2 { color: #0074e4; margin-top: 1em; }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d;
+      color: #f0f0f0;
+    }
+    a { color: #ff6f00; text-decoration: none; }
+    header, section {
+      padding: 2em 1.5em;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    h2 {
+      color: #ff6f00;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.3em;
+      margin-top: 1.5em;
+    }
     .cta-button {
       display: inline-block;
-      background: #ff5722;
-      color: white;
+      background: #ff6f00;
+      color: #fff;
       padding: 1em 2em;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 1em;
+      margin-top: 1.5em;
+      transition: background 0.3s;
     }
-    .features, .reviews, .faq { background: white; margin-bottom: 1em; border-radius: 10px; padding: 1em; }
-    footer { background: #eee; text-align: center; padding: 1em; font-size: 0.9em; }
-    .comparison img { width: 100%; max-width: 150px; border-radius: 8px; }
-    .comparison { display: flex; justify-content: space-around; align-items: center; gap: 1em; flex-wrap: wrap; }
+    .cta-button:hover {
+      background: #e65c00;
+    }
+    .features, .reviews, .faq {
+      background: #1a1a1a;
+      margin-bottom: 1.5em;
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0 0 10px rgba(255, 111, 0, 0.1);
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1.5em;
+      font-size: 0.9em;
+      color: #888;
+    }
+    .comparison img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 8px;
+      border: 2px solid #333;
+    }
+    .comparison {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      background: #1a1a1a;
+      padding: 1em;
+      border-radius: 10px;
+    }
     @media (max-width: 600px) {
-      .comparison { flex-direction: column; }
+      .comparison {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -60,11 +114,11 @@
 <section class="comparison">
   <div>
     <p><strong>Before（自撮り）</strong></p>
-    <img src="before.jpg" alt="Before">
+    <img src="https://source.unsplash.com/160x160/?man,casual" alt="Before">
   </div>
   <div>
     <p><strong>After（AI生成）</strong></p>
-    <img src="after.jpg" alt="After">
+    <img src="https://source.unsplash.com/160x160/?portrait,model" alt="After">
   </div>
 </section>
 
@@ -81,7 +135,7 @@
   <p><strong>Q. 女性にも使えますか？</strong><br>現在は男性向けに特化しています。</p>
 </section>
 
-<section style="text-align: center;">
+<section style="text-align: center; background: #1a1a1a; padding: 2em; border-radius: 10px;">
   <h2>今だけ限定キャンペーン！</h2>
   <p>🎁 初回500円割引＆全額返金保証つき！</p>
   <a href="#" class="cta-button">今すぐ試してみる</a>
